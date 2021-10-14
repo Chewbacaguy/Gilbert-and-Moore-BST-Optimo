@@ -8,7 +8,7 @@ using namespace std;
 //pacum = vector de prob acumuladas indexada desde 0..n
 //Complejidad: O(n^3)
 float BSTOp(vector<float> &p, vector<float> &pacum){
-  int n = p.size()
+  int n = p.size();
   float A[n+1] [n+1];
   for(int i=1; i<= n; i++){
     A[i][i-1] = 0;
@@ -50,10 +50,11 @@ int main() {
 
 }
 
-
-// 5
-// .2
-// .15
-// .2
-// .3
-// .15
+/*
+5
+.2
+.15
+.2
+.3
+.15
+*/
