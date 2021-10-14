@@ -15,7 +15,7 @@ float BSTOp(vector<float> &p, vector<float> &pacum){
     A[i][i] = p[i-1];
   }
   for(int diag =1; diag <n; diag++){
-    for(int i=1; i<n-diag;i++){
+    for(int i=1; i<=n-diag;i++){
       int j=i+diag;
       float min  = A[i][i-1] + A[i+1][j];
       for(int k = i+1; k<= j; k++){
